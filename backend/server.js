@@ -9,13 +9,13 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.sendFile("D:/PROJECTS/vehicleRent/backend" + "/index.html");
+  res.sendFile("./index.html");
 });
 
 var db;
 
 MongoClient.connect(
-  "mongodb://localhost:27017/vehicleRent",
+  "mongodb://localhost:27017/carCastle",
   (err, database) => {
     if (err) return console.log(err);
     db = database.db("vehicleRent");
