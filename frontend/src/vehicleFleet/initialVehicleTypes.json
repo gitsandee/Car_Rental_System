@@ -1,0 +1,22 @@
+[
+    {
+        "type": "Tuk Tuk (Three Wheeler)",
+        "image": "./images/tuktuk.jpeg"
+    },
+    {
+        "type": "Car",
+        "image": "./images/Maruti.jpeg"
+    },
+    {
+        "type": "Van",
+        "image": "./images/KDH8.jpeg"
+    },
+    {
+        "type": "Bus",
+        "image": "./images/bus.jpeg"
+    },
+    {
+        "type": "Motor bikes",
+        "image": "./images/BikeFZ.jpeg"
+    }
+]
