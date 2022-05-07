@@ -9,16 +9,18 @@ app.use(express.json());
 app.use(cors());
 
 app.get("/", (req, res) => {
-  res.sendFile("./index.html");
+  res.sendFile("D:/PROJECTS/vehicleRent/backend" + "/index.html");
 });
+
 
 var db;
 
 MongoClient.connect(
+
   "mongodb://localhost:27017/carCastle",
   (err, database) => {
     if (err) return console.log(err);
-    db = database.db("vehicleRent");
+    db = database.db("carCastle");
 
 
     //vehicles crud
@@ -31,12 +33,14 @@ MongoClient.connect(
     });
 
     app.post("/vehicles/update", (req, res) => {
-      db.collection("vehicles").updateOne(req.body.query, req.body.newVals, (err, result) => {
+      console.log('update vehicles')
+      db.collection("vehicles").updateOne(req.body.query, { $set: req.body.newVals }, (err, result) => {
+        console.log({result})
         if (err) return res.send(400, { message: err });
         res.send(200, { message: "ok" });
       });
     });
-    
+
     app.get("/vehicles", (req, res) => {
       db.collection("vehicles")
         .find({})
@@ -47,7 +51,7 @@ MongoClient.connect(
     });
 
     app.post("/vehicles/delete", (req, res) => {
-      db.collection("vehicles").deleteOne(req.body.id, function(err, obj) {
+      db.collection("vehicles").deleteOne(req.body.id, function (err, obj) {
         if (err) throw err;
         console.log("1 document deleted");
         res.send(200, { message: "ok" });
@@ -80,7 +84,7 @@ MongoClient.connect(
     });
 
     app.post("/vehicleTypes/delete", (req, res) => {
-      db.collection("vehicleTypes").deleteOne(req.body.id, function(err, obj) {
+      db.collection("vehicleTypes").deleteOne(req.body.id, function (err, obj) {
         if (err) throw err;
         console.log("1 document deleted");
         res.send(200, { message: "ok" });
