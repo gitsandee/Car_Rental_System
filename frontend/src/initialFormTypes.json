@@ -1,0 +1,238 @@
+    [
+        {
+            "name": "Self Drive",
+            "fields": [
+                [
+                    {
+                        "name": "Pickup Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Pickup Date / Time",
+                        "type": "datetime-local"
+                    },
+                    {
+                        "name": "Return Date / Time",
+                        "type": "datetime-local"
+                    }
+                ],
+                [
+                    {
+                        "name": "Number of days",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Vehicle type",
+                        "type": "select",
+                        "options": [
+                            "WagonR",
+                            " Car",
+                            "Bike"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Currency type",
+                        "type": "select",
+                        "options": [
+                            "LRK",
+                            "USD"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "With Driver",
+            "fields": [
+                [
+                    {
+                        "name": "Pickup Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Pickup Date / Time",
+                        "type": "datetime-local"
+                    },
+                    {
+                        "name": "Return Date / Time",
+                        "type": "datetime-local"
+                    }
+                ],
+                [
+                    {
+                        "name": "Number of days",
+                        "type": "number"
+                    },
+                    {
+                        "name": "Vehicle type",
+                        "type": "select",
+                        "options": [
+                            "WagonR",
+                            " Car",
+                            "Bike"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Currency type",
+                        "type": "select",
+                        "options": [
+                            "LRK",
+                            "USD"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "Transfers(taxi)",
+            "fields": [
+                [
+                    {
+                        "name": "Pickup Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Drop-Off Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Pickup Date / Time",
+                        "type": "datetime-local"
+                    }
+                ],
+                [
+                    {
+                        "name": "Currency type",
+                        "type": "select",
+                        "options": [
+                            "LRK",
+                            "USD"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "Airport Transfers",
+            "fields": [
+                [
+                    {
+                        "name": "From or to airport",
+                        "type": "select",
+                        "options": [
+                            "From airport",
+                            "To airport"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Pickup Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Drop-Off Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Pickup Date / Time",
+                        "type": "datetime-local"
+                    }
+                ],
+                [
+                    {
+                        "name": "Currency type",
+                        "type": "select",
+                        "options": [
+                            "LRK",
+                            "USD"
+                        ]
+                    }
+                ]
+            ]
+        },
+        {
+            "name": "Weddings",
+            "fields": [
+                [
+                    {
+                        "name": "Pickup Location",
+                        "type": "select",
+                        "options": [
+                            "colombo",
+                            "gampaha",
+                            "kaluthara"
+                        ]
+                    }
+                ],
+                [
+                    {
+                        "name": "Pickup Date / Time",
+                        "type": "datetime-local"
+                    }
+                ],
+                [
+                    {
+                        "name": "Number of days",
+                        "type": "number"
+                    }
+                ],
+                [
+                    {
+                        "name": "Currency type",
+                        "type": "select",
+                        "options": [
+                            "LRK",
+                            "USD"
+                        ]
+                    }
+                ]
+            ]
+        }
+    ]
